@@ -3,7 +3,7 @@ import 'package:just_audio/just_audio.dart';
 
 
 class PlayerButtons extends StatelessWidget {
-  const PlayerButtons(this._audioPlayer, {Key key}) : super(key: key);
+  const PlayerButtons(this._audioPlayer, {Key? key}) : super(key: key);
 
   final AudioPlayer _audioPlayer;
 
@@ -18,7 +18,7 @@ class PlayerButtons extends StatelessWidget {
             return _shuffleButton(context, snapshot.data ?? false);
           },
         ),
-        StreamBuilder<SequenceState>(
+        StreamBuilder<SequenceState?>(
           stream: _audioPlayer.sequenceStateStream,
           builder: (_, __) {
             return _previousButton();
@@ -31,7 +31,7 @@ class PlayerButtons extends StatelessWidget {
             return _playPauseButton(playerState);
           },
         ),
-        StreamBuilder<SequenceState>(
+        StreamBuilder<SequenceState?>(
           stream: _audioPlayer.sequenceStateStream,
           builder: (_, __) {
             return _nextButton();
@@ -47,7 +47,7 @@ class PlayerButtons extends StatelessWidget {
     );
   }
 
-  Widget _playPauseButton(PlayerState playerState) {
+  Widget _playPauseButton(PlayerState? playerState) {
 
     final processingState = playerState?.processingState;
 
@@ -83,7 +83,7 @@ class PlayerButtons extends StatelessWidget {
         icon: Icon(Icons.replay),
         iconSize: 64.0,
         onPressed: () => _audioPlayer.seek(Duration.zero,
-            index: _audioPlayer.effectiveIndices.first),
+            index: _audioPlayer.effectiveIndices?.first),
       );
     }
   }
