@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sample_music_player/screens/player.dart';
+import 'package:sample_music_player/services/playlists/hardcoded_playlists_service.dart';
+import 'package:sample_music_player/services/playlists/playlists_service.dart';
 
 
 void main() {
@@ -11,7 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Player(),
+      home: Provider<PlaylistsService>(
+          create: (_) {
+            return HardcodedPlaylistsService();
+          },
+          child: Player()),
     );
   }
 }
