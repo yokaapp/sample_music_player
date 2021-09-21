@@ -1,4 +1,4 @@
-import 'package:sample_music_player/domain/playlists/author.dart';
+import 'package:flexible_repeat/domain/playlists/author.dart';
 
 class PlaylistItem {
   /// The [Author] of this audio item.

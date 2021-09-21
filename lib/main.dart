@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sample_music_player/screens/category_selector.dart';
-import 'package:sample_music_player/services/playlists/hardcoded_playlists_service.dart';
-import 'package:sample_music_player/services/playlists/playlists_service.dart';
+import 'package:flexible_repeat/screens/category_selector.dart';
+import 'package:flexible_repeat/services/playlists/hardcoded_playlists_service.dart';
+import 'package:flexible_repeat/services/playlists/playlists_service.dart';
 
 import 'services/audio/audio_player_service.dart';
 import 'services/audio/just_audio_player.dart';

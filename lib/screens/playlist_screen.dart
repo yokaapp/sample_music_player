@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample_music_player/domain/playlists/playlist_item.dart';
+import 'package:flexible_repeat/domain/playlists/playlist_item.dart';
 
 import 'commons/player_buttons_container.dart';
 import 'commons/playlist_view.dart';

@@ -1,5 +1,5 @@
 import 'package:just_audio/just_audio.dart';
-import 'package:sample_music_player/domain/playlists/playlist_item.dart';
+import 'package:flexible_repeat/domain/playlists/playlist_item.dart';
 
 import 'audio_player_service.dart';
 

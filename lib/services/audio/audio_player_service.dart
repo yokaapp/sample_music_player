@@ -1,4 +1,4 @@
-import 'package:sample_music_player/domain/playlists/playlist_item.dart';
+import 'package:flexible_repeat/domain/playlists/playlist_item.dart';
 
 /// Enumerates the different processing states of a player.
 enum AudioProcessingState {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sample_music_player/domain/playlists/playlist_item.dart';
-import 'package:sample_music_player/services/audio/audio_player_service.dart';
+import 'package:flexible_repeat/domain/playlists/playlist_item.dart';
+import 'package:flexible_repeat/services/audio/audio_player_service.dart';
 
 
 /// A `Row` of buttons that interact with audio.

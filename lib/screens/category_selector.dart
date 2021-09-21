@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sample_music_player/screens/commons/player_buttons_container.dart';
-import 'package:sample_music_player/screens/playlist_screen.dart';
-import 'package:sample_music_player/services/playlists/playlists_service.dart';
+import 'package:flexible_repeat/screens/commons/player_buttons_container.dart';
+import 'package:flexible_repeat/screens/playlist_screen.dart';
+import 'package:flexible_repeat/services/playlists/playlists_service.dart';
 import 'package:provider/provider.dart';
 
 /// A selector screen for categories of audio.
